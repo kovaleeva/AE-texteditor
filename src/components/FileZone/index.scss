@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+
+#file-zone {
+  background-color:#f1f0f0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+
+  #textForm {
+    width: $wrapper-width;
+  }
+
+  .add-text {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+
+    &__textarea {
+      width: 75%;
+    }
+
+    &__button {
+      width: 20%;
+    }  
+  }
+}
+
+#file {
+  width: $wrapper-width;
+  flex-grow: 1;
+  background-color: #fff;
+  border: 1px solid #e4dede;
+  padding: 16px;
+  text-align: center;
+  word-break: break-word;
+  overflow: auto;
+
+  .italic {
+    font-style: italic;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .selected {
+    background-color: $selection-color;
+  }
+}

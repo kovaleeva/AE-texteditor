@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+#control-panel {
+    background-color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $wrapper-width;
+    margin: auto;
+}
+
+#format-actions {
+    width: 200px;
+    margin-right: 400px;
+}
+
+.format-action {
+    &.active {
+        background-color: $selection-color;
+        border-radius: 3px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
